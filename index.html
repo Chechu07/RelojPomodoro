@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj pomodoro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+   <header class="container">
+    <div class="edge">
+        <div class="box">
+            <div class="time">
+                <p class="minutes" id="minutes">14</p>
+                <p class="point"> : </p>
+                <p class="seconds" id="seconds">14</p>
+            </div>
+        </div>
+     </div>
+
+    <div class="indicators">
+        <p class="now" id="work">Work</p>
+        <p class="then" id="break">Break</p>
+        
+    </div>
+
+    <div>
+      <img onclick=start() id="start" src="play.png" alt="play">
+    </div>
+   </header>
+
+   <script src="app.js"></script>
+</body>
+</html>
